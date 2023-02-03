@@ -19,8 +19,9 @@ body {
   margin-bottom: 16px;
 }
 
-.country-droplist {
-  display: flex;
+.country-item li:not(:last-child) {
+  content: ' ';
+  margin-right: 10px;
 }
 
 h2 {

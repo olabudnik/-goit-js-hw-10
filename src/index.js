@@ -68,9 +68,8 @@ function clearCountryInfo () {
 function renderCountryList(data) {
     const markup = data.map(({name:{official}, flags:{svg, alt}}) => {
     return `
-    <div class=country-droplist>
     <li class="country-item"><img width="25px" src="${svg}" alt="${alt}" /><span>${official}</span></li>
-    </div>`;
+    `;
 });
 refs.countryList.innerHTML = markup; 
 }
@@ -91,7 +90,5 @@ function renderCountryCard(data) {
 })
 .join('')
 refs.countryInfo.innerHTML = markup; 
+
 }
-
-
-// searchFormElement.addEventListener('focus', onSearchFormSubmit)
